@@ -3,7 +3,7 @@ const cardsData = [
     {
         id: 1,
         title: "Qué Significa Pensar Como Programador",
-        category: "FRONT END",
+        category: "Front End",
         photo: "https://i.ytimg.com/vi/ov7vA5HFe6w/sddefault.jpg",
         link: "https://www.youtube.com/embed/ov7vA5HFe6w?si=rFYWWhqKMEWzxiJn",
         description: "¿Cuáles son las principales características de un programador? ¿Qué habilidades y competencias debe tener alguien que quiere seguir esa carrera? En este video Christian Velasco nos habla de las principales características de un Programador."
@@ -11,7 +11,7 @@ const cardsData = [
     {
         id: 2,
         title: "Cuándo usar let, var y const?",
-        category: "FRONT END",
+        category: "Front End",
         photo: "https://i.ytimg.com/vi/PztCEdIJITY/maxresdefault.jpg",
         link: "https://www.youtube.com/embed/PztCEdIJITY?si=hfEWd-LVzlUvP_qT",
         description: "¿A veces cuando estás programando sientes dificuldades en saber en qué momento utilizar let, var o const para declarar una variable? En este video te sacamos estas dudas, además de explicarte lo que es escopo global y local en JavaScript."
@@ -19,7 +19,7 @@ const cardsData = [
     {
         id: 3,
         title: "¿Qué es JavaScript?",
-        category: "FRONT END",
+        category: "Front End",
         photo: "https://i.ytimg.com/vi/GJfOSoaXk4s/mqdefault.jpg",
         link: "https://www.youtube.com/embed/GJfOSoaXk4s?si=Sy4rvrikw1n4x2-o",
         description: "JavaScript: ¿qué es y cómo se hizo este lenguaje que genera muchas discusiones y debates entre la gente del área de desarrollo? Genesys y Gabriela nos hablan exactamente de esto en este Alura Tips."
@@ -27,7 +27,7 @@ const cardsData = [
     {
         id: 4,
         title: "Equipo Front End",
-        category: "FRONT END",
+        category: "Front End",
         photo: "https://i.ytimg.com/vi/rpvrLaBQwgg/maxresdefault.jpg",
         link: "https://www.youtube.com/embed/rpvrLaBQwgg?si=V1VLVFRuKgOI_y6-",
         description: "¿Estás empezando tus estudios de Programación? ¿Te interesa todo lo que es la creación de Páginas Web Desarrollo de Softwares? ¿O estás pensando en cambiar de carrera y entrar a la maravillosa area de tecnología?"

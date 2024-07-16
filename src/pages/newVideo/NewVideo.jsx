@@ -74,7 +74,7 @@ function NewVideo() {
 
     const handleConfirmSave = () => {
         addVideo(formData);
-        setNotificationMessage('El video se ha guardado exitosamente.');
+        setNotificationMessage('El video se ha guardado correctamente.');
         setShowConfirmation(false);
         setShowNotification(true);
         setTimeout(() => {
@@ -103,15 +103,15 @@ function NewVideo() {
         <div className="new-video-page">
             <div className="container__new-video">
                 <header className="new-video__header">
-                    <h1 className="new-video__title">NUEVO VIDEO</h1>
+                    <h2 className="new-video__title">Nuevo video</h2>
                     <p className="new-video__description">
-                        COMPLETE EL FORMULARIO PARA CREAR UNA NUEVA TARJETA DE VIDEO
+                        Completa el formulario para agregar un nuevo video a la lista.
                     </p>
                 </header>
                 <form className="new-video__form" onSubmit={handleSave}>
                     <div className="form-section">
                         <div className="form-section__left">
-                            <h2 className="new-video__form-title">Crear Tarjeta</h2>
+                            <h3 className="new-video__form-title">Crear tarjeta</h3>
                         </div>
                     </div>
                     <div className="form-section">
@@ -189,7 +189,7 @@ function NewVideo() {
                                 <textarea
                                     className={`new-video__form-input new-video__form-textarea ${errors.description && touchedFields.description ? 'error' : ''}`}
                                     name="description"
-                                    placeholder='¿De qué se trata este vídeo?'
+                                    placeholder='Ingresar descripción del video'
                                     value={formData.description}
                                     onChange={handleChange}
                                     onBlur={() => handleFieldBlur('description')}
@@ -205,13 +205,13 @@ function NewVideo() {
                     <div className="new-video__form-buttons">
                         <FormButton
                             type="submit"
-                            label="GUARDAR"
+                            label="Guardar"
                             disabled={isButtonDisabled}
                             buttonType="form-button--save"
                         />
                         <FormButton
                             type="button"
-                            label="LIMPIAR"
+                            label="Borrar"
                             onClick={handleCancel}
                             buttonType="form-button--cancel"
                         />

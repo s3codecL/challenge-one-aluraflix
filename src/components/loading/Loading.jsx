@@ -13,7 +13,7 @@ const Loading = () => {
     return (
         <div className="loading-container">
             <CircleFadeLoader {...loaderProps} />
-            <h2>Cargando...</h2>
+            <h2>Loading...</h2>
         </div>
     );
 };

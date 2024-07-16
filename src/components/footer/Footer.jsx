@@ -37,7 +37,7 @@ const LogoContainer = styled.div`
     justify-content: center;
     align-items: center;
     img {
-        width: clamp(30%, 100%, 10.528rem); 
+        width: clamp(40%, 100%, 10.528rem); 
         height: auto;
         background-color: var(--color-black);
     }
@@ -45,7 +45,7 @@ const LogoContainer = styled.div`
 
 const FooterText = styled.p`
     background-color: transparent;
-    font-size: 13px;
+    font-size: 16px;
     color: var(--color-white-smoke);
     margin: 0;
     line-height: 1.4;

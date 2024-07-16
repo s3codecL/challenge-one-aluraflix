@@ -27,9 +27,10 @@ function Banner({ card, categoryLookup }) {
             <div className={styles.gradient}></div> 
             <section className={styles.content}>
                 <h1 className={styles.name} style={titleStyle}>{name}</h1>
-                <h2 className={styles.title}>Challenge React</h2>
+                <h2 className={styles.title}>React Challenge </h2>
                 <p className={styles.subtitle}>
-                    Este challenge es una forma de aprendizaje. Es un mecanismo donde podrás comprometerte en la resolución de un problema para poder aplicar todos los conocimientos adquiridos en la formación React.
+                    Bienvenido a AluraFlix, un lugar donde podrás encontrar los mejores tutoriales 
+                    y poner a prueba tus habilidades en React. ¡Esperamos que te diviertas!
                 </p>
                 <button onClick={toggleDescription} className={styles.toggleButton}>
                     {showDescription ? 'Ocultar descripción' : 'Ver descripción...'}

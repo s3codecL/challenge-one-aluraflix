@@ -138,13 +138,13 @@ const Modal = ({ card, isOpen, onClose, onSave }) => {
                     <div className="new-video__form-buttons">
                         <FormButton
                             type="submit"
-                            label="GUARDAR"
+                            label="Guardar"
                             disabled={isButtonDisabled}
                             buttonType="form-button--save"
                         />
                         <FormButton
                             type="button"
-                            label="LIMPIAR"
+                            label="Borrar"
                             onClick={handleCancel}
                             buttonType="form-button--cancel"
                         />

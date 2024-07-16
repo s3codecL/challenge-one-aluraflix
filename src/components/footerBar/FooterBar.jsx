@@ -15,7 +15,7 @@ function FooterBar() {
                     <Link to="/" className="footer-icon">
                         <button className="icon">
                             <IoHome className="icon-home" />
-                            <p>INICIO</p>
+                            <p>Inicio</p>
                         </button>
                     </Link>
                     <Link to="/newVideo" className="footer-icon">
@@ -31,7 +31,7 @@ function FooterBar() {
                     <Link to="/newVideo" className="footer-icon">
                         <button className="icon">
                             <IoMdAddCircleOutline className="icon-add" />
-                            <p>NUEVO VIDEO</p>
+                            <p>Nuevo video</p>
                         </button>
                     </Link>
                 </>

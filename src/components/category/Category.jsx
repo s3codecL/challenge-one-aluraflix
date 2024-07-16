@@ -20,7 +20,7 @@ const Category = ({ datos, cards, onCardClick, onCardDelete, onCardEdit }) => {
     const confirmDelete = () => {
         if (cardToDelete) {
             onCardDelete(cardToDelete.id);
-            setNotificationMessage(`"${cardToDelete.title}" eliminado correctamente.`);
+            setNotificationMessage(`"${cardToDelete.title}" ha sido eliminado`);
             setShowNotification(true);
             setTimeout(() => {
                 setShowNotification(false);

@@ -14,8 +14,8 @@ function Header() {
             </Link>
             <nav className={styles.nav}>
                 <div className={styles.navLinks}>
-                    <HeaderLink url="./">INICIO</HeaderLink>
-                    <HeaderLink url="./newVideo">NUEVO VIDEO</HeaderLink>
+                    <HeaderLink url="./">Inicio</HeaderLink>
+                    <HeaderLink url="./newVideo">Nuevo video</HeaderLink>
                 </div>
             </nav>
         </header>
