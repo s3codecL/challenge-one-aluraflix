@@ -1,6 +1,5 @@
-<p align="center">
-  <img src="https://github.com/s3codecL/challenge-one-aluraflix/blob/main/assets/logo.png?raw=true" alt="LogoMain"/>
-</p>
+![Aluraflix](https://github.com/s3codecL/challenge-one-aluraflix/blob/main/src/assets/logo.png)
+---
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
@@ -195,37 +194,25 @@ Inicia el proyecto en [http://localhost:5173/](http://localhost:5173/)
 
         http://localhost:5173/
 
-## 📁 Acceso al proyecto
-
 ### Deploy del proyecto en Vercel
 1. Se crea una carpeta `dist` ejecutando el comando:
 
         npm run build
 
-2. Comentar la carpeta `dist` en gitignore
-
-            #dist
-
-3. Subir la carpeta `dist` a GitHub.*
-
-### Demo
-
-![challenge-aluraflix](https://github.com/s3codecL/challenge-one-aluraflix/assets/101030215/9f350de6-de55-45be-b728-bbb69357155f)
-
-
+![Aluraflix](https://github.com/s3codecL/challenge-one-aluraflix/blob/main/src/assets/logo.png)
 ---
 
-## - [x] Tecnologías
-- [ ] [React + Vite](https://vitejs.dev/guide/)
-- [ ] JavaScript
+## - Tecnologías
+- [x] [React + Vite](https://vitejs.dev/guide/)
+- [x] JavaScript
 
 ## Tecnologías secundarias
-- [ ] Node.js y npm
-- [ ] JSON Server
-- [ ] VsCode
-- [ ] Git
-- [ ] GitHub
-- [ ] Figma
+- [x] Node.js y npm
+- [x] JSON Server
+- [x] VsCode
+- [x] Git
+- [x] GitHub
+- [x] Figma
 
 ### Diseño
 * [Figma](https://www.figma.com/design/fq7mKIvvVXYylv8eti3hjm/New-AluraFlix---ESP?node-id=1-106&t=HWLfNcrrMRgRcBBC-0) - Diseño del proyecto.
