@@ -388,7 +388,8 @@ Desarrollado con ❤️ por [s3codecL](https://github.com/s3codecL)
 
 </div>
 
-    **6.3.** Iniciar el servidor JSON ejecutando:
+
+   **6.3.** Iniciar el servidor JSON ejecutando:
 
             npx json-server --watch db.json --port 3000
     
