@@ -344,7 +344,7 @@ Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](./LICENSE) pa
 
 - GitHub: [@s3codecL](https://github.com/s3codecL)
 - LinkedIn: [gandradev](https://www.linkedin.com/in/gandradev/)
-- Email: [contacto@tudominio.com](mailto:contacto@tudominio.com)
+- Email: [gandradev@gmail.com](mailto:gandradev@gmail.com)
 
 **Link del Proyecto**: [https://github.com/s3codecL/challenge-one-aluraflix](https://github.com/s3codecL/challenge-one-aluraflix)
 
