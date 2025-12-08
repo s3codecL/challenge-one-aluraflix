@@ -1,53 +1,140 @@
-# 🎬 AluraFlix - Modernización Completa
+# Changelog
 
-## ✅ Mejoras Implementadas
+Todos los cambios notables en este proyecto serán documentados en este archivo.
 
-### 🚀 Configuración para Vercel
-- ✅ Archivo `vercel.json` configurado
-- ✅ API serverless en `/api/videos.js`
-- ✅ Detección automática de entorno (desarrollo/producción)
-- ✅ Scripts de build optimizados
-- ✅ `.gitignore` actualizado
+El formato está basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
+y este proyecto adhiere a [Semantic Versioning](https://semver.org/lang/es/).
 
-### 🎨 Estilos Modernos Globales
-- ✅ Variables CSS modernas con sistema de diseño completo
-- ✅ Paleta de colores extendida
-- ✅ Sistema de espaciado consistente (xs, sm, md, lg, xl, 2xl)
-- ✅ Transiciones suaves (fast, base, slow)
-- ✅ Sombras modernas con múltiples niveles
-- ✅ Border radius estandarizado
-- ✅ Scrollbar personalizado
-- ✅ Smooth scroll global
-- ✅ Animaciones keyframes reutilizables (fadeIn, slideIn)
-- ✅ Focus visible para accesibilidad
+---
 
-### 📱 Header Responsivo
-- ✅ Menú hamburguesa funcional (useState)
-- ✅ Iconos React Icons (FaBars, FaTimes)
-- ✅ Transiciones suaves en apertura/cierre
-- ✅ Backdrop blur en menú móvil
-- ✅ Sticky positioning
-- ✅ Logo con efecto hover scale
-- ✅ Breakpoints: mobile (480px), tablet (768px), desktop (1440px+)
+## [2.0.0] - 2024-01-15
 
-### 🎴 Componentes de Tarjetas
-- ✅ Cards con aspect ratio 16:9
-- ✅ Animación fadeIn al cargar
-- ✅ Transformaciones hover (translateY + scale)
-- ✅ Sombras con color de categoría
-- ✅ Gradiente en fondo de iconos
-- ✅ Botones edit/delete con hover states
-- ✅ Responsive con clamp() para tamaños fluidos
+### 🚀 Agregado
 
-### 📂 Categorías
-- ✅ Título con animación shimmer
-- ✅ Scroll snap para navegación suave
-- ✅ Scrollbar con gradiente personalizado
-- ✅ Layout optimizado para cada breakpoint
-- ✅ Gap system usando variables CSS
+#### Infraestructura y Deploy
+- Configuración completa para Vercel (`vercel.json`)
+- API serverless en `/api/videos.js` con funciones CRUD
+- Detección automática de entorno (desarrollo/producción)
+- Scripts de build optimizados en `package.json`
+- Documentación profesional de deploy (`DEPLOY.md`)
+- Guía de inicio rápido (`QUICKSTART.md`)
 
-### 🎥 Banner
-- ✅ Gradiente overlay moderno (135deg)
+#### Sistema de Diseño Moderno
+- Variables CSS globales con sistema de diseño completo
+- Paleta de colores extendida con categorías semánticas
+- Sistema de espaciado consistente (xs, sm, md, lg, xl, 2xl)
+- Transiciones suaves estandarizadas (fast/base/slow)
+- Sombras modernas con múltiples niveles
+- Border radius estandarizado
+- Animaciones keyframes reutilizables (fadeIn, slideIn, shimmer)
+
+#### Componentes Modernizados
+- Header responsivo con menú hamburguesa funcional
+- Cards con aspect ratio 16:9 y animaciones hover
+- Banner con gradiente moderno y texto optimizado
+- Footer full-width con styled-components
+- Modal con backdrop blur y animaciones
+- Formularios con validación mejorada
+- Loading spinner animado
+
+#### Responsive Design
+- Breakpoints móviles: 480px, 768px, 1024px, 1440px
+- Mobile-first approach en todos los componentes
+- Menú hamburguesa con animaciones suaves
+- Layout adaptativo con CSS Grid y Flexbox
+- Tipografía fluida con clamp()
+
+#### Accesibilidad
+- Focus visible para navegación por teclado
+- Estados hover/focus mejorados
+- Contraste de color optimizado
+- Scrollbar personalizado con mejor UX
+
+### 🔄 Cambiado
+
+#### Estilos Globales
+- Migración completa de `index.css` a sistema de variables CSS
+- Scrollbar personalizado con gradiente
+- Smooth scroll habilitado globalmente
+- Tipografía base actualizada a sistema modular
+
+#### Componentes
+- Header: Iconos de React Icons, menú sticky, logo con efecto scale
+- Cards: Transformaciones hover (translateY + scale), sombras con color de categoría
+- Banner: Gradiente diagonal (135deg), tipografía mejorada
+- Footer: Eliminado `.container`, width 100% para full-width
+- Category: Títulos reducidos de 1.5-2.25rem a 1-1.5rem
+- Modal: Backdrop blur-lg, animaciones suaves
+
+#### API y Contexto
+- `VideoContext.jsx`: Detección de entorno para API URL
+- `api/videos.js`: Reescrito para serverless (sin fs/path)
+- Datos hardcodeados en serverless function
+- Manejo mejorado de estados de carga y error
+
+### 🐛 Corregido
+
+- Footer cortado: Removido max-width de `.container` y `#root`
+- Loading infinito en Vercel: API serverless sin dependencias de Node.js fs
+- Botones de navegación muy grandes: Reducido font-size a clamp(0.9rem, 1vw, 1.1rem)
+- Títulos de categoría muy grandes: Reducido a clamp(1rem, 1.5vw, 1.5rem)
+- Responsive en móviles mejorado con breakpoints específicos
+
+### 🗑️ Eliminado
+
+- Dependencia de `db.json` para API (ahora usa datos en memoria)
+- Max-width restrictivo en contenedores principales
+- Estilos legacy no responsive
+- JSON Server como dependencia de desarrollo
+
+### 🔒 Seguridad
+
+- Validación de inputs en formularios
+- Sanitización de URLs en componentes
+- Headers de seguridad en Vercel
+- CORS configurado correctamente
+
+---
+
+## [1.0.0] - 2023-12-01
+
+### 🚀 Agregado
+
+- Versión inicial del proyecto AluraFlix
+- CRUD básico de videos con JSON Server
+- Componentes React: Header, Footer, Card, Category, Banner
+- React Router para navegación
+- Contexto global para gestión de videos
+- Formulario de creación/edición de videos
+- Modal de confirmación para eliminaciones
+- Estilos básicos con CSS modules
+
+### Características Iniciales
+
+- Categorías: FRONT END, BACK END, INNOVACIÓN Y GESTIÓN
+- Visualización de videos en formato de tarjetas
+- Banner destacado con video principal
+- Navegación entre Home y Nueva Video
+- Almacenamiento local con `db.json`
+
+---
+
+## Tipos de Cambios
+
+- `🚀 Agregado`: Nuevas características
+- `🔄 Cambiado`: Cambios en funcionalidad existente
+- `🐛 Corregido`: Corrección de bugs
+- `🗑️ Eliminado`: Características removidas
+- `🔒 Seguridad`: Correcciones de seguridad
+- `📝 Documentación`: Solo cambios en documentación
+
+---
+
+<div align="center">
+
+[Ver todas las versiones](https://github.com/s3codecL/challenge-one-aluraflix/releases)
+
+</div>
 - ✅ Min-height responsivo con clamp()
 - ✅ Aspect ratio 16:9 en video
 - ✅ Texto con gradient clip

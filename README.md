@@ -1,159 +1,392 @@
 ![Aluraflix](https://github.com/s3codecL/challenge-one-aluraflix/blob/main/src/assets/logo.png)
----
+
+<div align="center">
 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
-# Challenge AluraFlix
-<p align="right"></p>
+### 🎬 Plataforma moderna de gestión de videos educativos
 
-## Descripción del proyecto
-AluraFlix es una plataforma de videos en línea que permite a los usuarios ver y compartir contenido audiovisual en diferentes categorías. En este proyecto, se implementará una aplicación web con React y Vite para gestionar una lista de videos y mostrarlos en una interfaz de usuario interactiva y atractiva.
+[Demo en Vivo](https://challenge-one-aluraflix-kappa.vercel.app) · [Reportar Bug](https://github.com/s3codecL/challenge-one-aluraflix/issues) · [Solicitar Feature](https://github.com/s3codecL/challenge-one-aluraflix/issues)
 
-## Características
-### Gestión de Videos:
+</div>
 
-- Listar videos
-- Registrar videos
-- Actualizar información
-- Eliminar videos
+---
 
-### Funcionalidades de React:
-- `Componentes:`Dividir la aplicación en componentes reutilizables para facilitar el mantenimiento y la escalabilidad del código.
-- `Hooks:`Utilizar hooks de estado y efecto para gestionar el estado de la aplicación y realizar acciones en diferentes momentos del ciclo de vida de los componentes.
-- `API:`Realizar peticiones a una API REST simulada para obtener y enviar información a través de la red.
-- `Rutas:`Utilizar rutas para navegar entre diferentes secciones de la aplicación y mostrar información específica en cada una de ellas.
+## 📋 Tabla de Contenidos
 
-## Creación de proyecto
-Crear un proyecto con Vite y React, ejecutando el comando:
+- [Sobre el Proyecto](#-sobre-el-proyecto)
+- [Características](#-características)
+- [Demo](#-demo)
+- [Tecnologías](#-tecnologías)
+- [Inicio Rápido](#-inicio-rápido)
+- [Estructura del Proyecto](#-estructura-del-proyecto)
+- [Despliegue](#-despliegue)
+- [API](#-api)
+- [Roadmap](#-roadmap)
+- [Contribución](#-contribución)
+- [Licencia](#-licencia)
+- [Contacto](#-contacto)
+- [Agradecimientos](#-agradecimientos)
 
-    npm create vite@latest
+## 🎯 Sobre el Proyecto
 
+**AluraFlix** es una plataforma web moderna e interactiva para la gestión y visualización de contenido educativo en video. Desarrollada como parte del programa **Oracle Next Education (ONE)** en colaboración con **Alura LATAM**, esta aplicación demuestra las mejores prácticas en desarrollo frontend con React.
 
-Selecciona el nombre del proyecto:
+### ✨ Características Destacadas
 
-    ...aluraflix
+#### 🎨 Interfaz Moderna
+- **Diseño 100% Responsive**: Optimizado para dispositivos móviles, tablets y desktop
+- **Animaciones Suaves**: Transiciones CSS profesionales y efectos hover elegantes
+- **Sistema de Diseño**: Variables CSS modernas con paleta de colores consistente
+- **Modo Oscuro**: Interfaz oscura optimizada para reducir fatiga visual
 
-Template:
+#### 🎥 Gestión de Videos
+- **CRUD Completo**: Crear, leer, actualizar y eliminar videos
+- **Categorización**: Organiza videos en Front End, Back End e Innovación y Gestión
+- **Búsqueda y Filtrado**: Encuentra contenido rápidamente
+- **Preview de Videos**: Visualiza videos de YouTube integrados
 
-    React +
-    JavaScript +
+#### 🚀 Funcionalidades Avanzadas
+- **API REST Serverless**: Backend funcional desplegado en Vercel
+- **Validación de Formularios**: Validación en tiempo real con feedback visual
+- **Notificaciones**: Sistema de alertas para acciones del usuario
+- **Modal de Edición**: Interfaz intuitiva para modificar videos
+- **Confirmación de Eliminación**: Diálogos de confirmación para prevenir errores
 
-Ingresar a la carpeta del proyecto:
+---
 
-    cd challenge-aluraflix
+## 📸 Demo
 
-Instalar las dependencias:
+### Vista Desktop
 
-    npm install
+![Desktop View](https://via.placeholder.com/800x450?text=Desktop+View)
 
-Iniciar el proyecto:
-    npm run dev
+### Vista Móvil
 
-### Opcional
-Modificar el package.json agregando en el campo scripts el siguiente script: 
+![Mobile View](https://via.placeholder.com/375x667?text=Mobile+View)
 
-        "scripts": {
-        "start": "vite",
-        "dev": "vite",
-        },
+### Funcionalidades en Acción
 
-Para iniciar el proyecto ejecutar:
+| Crear Video | Editar Video | Eliminar Video |
+|-------------|--------------|----------------|
+| ![Create](https://via.placeholder.com/250x150?text=Create) | ![Edit](https://via.placeholder.com/250x150?text=Edit) | ![Delete](https://via.placeholder.com/250x150?text=Delete) |
 
-     npm start
+> 📺 [Ver Demo en Vivo](https://challenge-one-aluraflix-kappa.vercel.app)
 
-Inicia el proyecto en [http://localhost:5173/](http://localhost:5173/)
+---
 
-## Instalación 🔧
-1. Instalar [react-router-dom](https://www.npmjs.com/package/react-router-dom) Documentación de [react-router-dom](https://reactrouter.com/web/guides/quick-start)
+## 🛠️ Tecnologías
 
-        npm i react-router-dom
+### Frontend
+- **React 18.2** - Biblioteca de JavaScript para interfaces de usuario
+- **React Router DOM 6.23** - Enrutamiento declarativo para React
+- **Vite 5.2** - Build tool ultrarrápido
+- **Styled Components 6.1** - CSS-in-JS para estilos dinámicos
+- **React Icons 5.2** - Iconos vectoriales como componentes React
 
+### Backend
+- **Vercel Serverless Functions** - API REST sin servidor
+- **JSON Server** - API REST simulada para desarrollo local
 
-2. Instalar [react-icons](https://www.npmjs.com/package/react-icons) para agregar iconos a la aplicación.
+### Desarrollo
+- **ESLint** - Linter para mantener código limpio
+- **Concurrently** - Ejecutar múltiples comandos npm simultáneamente
 
-        npm install react-icons
+## 🚀 Inicio Rápido
 
-3. Instalar [react-loaders-kit](https://www.npmjs.com/package/react-loaders-kit) para agregar animaciones de carga.
+### Prerequisitos
 
-    npm i --save react-loaders-kit
+- Node.js 16+ y npm instalados
+- Git instalado
+- Cuenta en GitHub (opcional para deploy)
+- Cuenta en Vercel (opcional para deploy)
 
-    **Pasos a realizar:**
-    1. Ingresar a react-loaders-kit.
-    2. Dar clic en Documentación.
-    3. Copiar el código de la animación que se desea utilizar.
-    4. Pegar el código en el archivo App.jsx.
+### Instalación
 
+1. **Clonar el repositorio**
+```bash
+git clone https://github.com/s3codecL/challenge-one-aluraflix.git
+cd challenge-aluraflix
+```
 
-4. Instalar [styled-components](https://www.npmjs.com/package/styled-components) para agregar estilos a los componentes. Documentación de [styled-components](https://styled-components.com/docs/basics)
+2. **Instalar dependencias**
+```bash
+npm install
+```
 
-        npm i styled-components
+3. **Iniciar servidor de desarrollo**
+```bash
+npm start
+```
 
-    
+Esto iniciará:
+- Frontend en `http://localhost:5173`
+- API local en `http://localhost:3000`
 
-5. Instalar [normalize.css](https://www.npmjs.com/package/normalize.css) para normalizar los estilos de los navegadores.
+### Scripts Disponibles
 
-        npm install normalize.css
+```bash
+npm start       # Inicia frontend + API local
+npm run dev     # Solo frontend (Vite)
+npm run build   # Build de producción
+npm run preview # Preview del build
+npm run lint    # Verificar código con ESLint
+```
 
-    **Pasos a realizar:**
-    1. Ingresar a normalize.css.
-    2. Dar clic en descargar.
-    3. Seleccionar el contenido con:
-    
-            Ctrl + a (selecciona)
+## 📁 Estructura del Proyecto
 
-            Ctrl + v (pega)
+```
+challenge-aluraflix/
+├── api/                          # Serverless API functions
+│   └── videos.js                 # CRUD endpoints para videos
+├── public/                       # Archivos estáticos
+├── src/
+│   ├── assets/                   # Imágenes y recursos
+│   ├── components/               # Componentes React
+│   │   ├── banner/              # Banner principal con video
+│   │   ├── card/                # Tarjeta de video
+│   │   ├── category/            # Sección de categoría
+│   │   ├── confirmationDialog/  # Diálogo de confirmación
+│   │   ├── footer/              # Footer de la aplicación
+│   │   ├── header/              # Cabecera con navegación
+│   │   ├── loading/             # Indicador de carga
+│   │   ├── modal/               # Modal de edición
+│   │   └── notification/        # Sistema de notificaciones
+│   ├── contexts/                # Context API de React
+│   │   └── VideoContext.jsx     # Estado global de videos
+│   ├── data/                    # Datos estáticos
+│   │   ├── CardsData.js
+│   │   └── CategoryData.js
+│   ├── pages/                   # Páginas de la aplicación
+│   │   ├── home/                # Página principal
+│   │   └── newVideo/            # Formulario de nuevo video
+│   ├── routes/                  # Configuración de rutas
+│   ├── utils/                   # Utilidades y helpers
+│   ├── App.jsx                  # Componente principal
+│   ├── main.jsx                 # Punto de entrada
+│   └── index.css                # Estilos globales
+├── db.json                      # Base de datos local (desarrollo)
+├── vercel.json                  # Configuración de Vercel
+├── vite.config.js              # Configuración de Vite
+├── package.json
+└── README.md
+```
 
-        Se pega el contenido del archivo normalize.css en el archivo GlobalStyles.jsx.
+## 🌐 Despliegue
 
-        *Ruta:*
+### Despliegue en Vercel (Recomendado)
 
-            src
-            ├── components
-            │   ├── globalStyles
-            │   │   ├── GlobalStyles.jsx
+1. **Conectar con GitHub**
+   - Accede a [vercel.com](https://vercel.com)
+   - Haz clic en "Add New Project"
+   - Importa tu repositorio de GitHub
 
-    4. Importar el archivo GlobalStyles.jsx en el archivo App.jsx.
-    
-                import GlobalStyles from './components/globalStyles/GlobalStyles';
+2. **Configuración Automática**
+   - Vercel detectará automáticamente Vite
+   - La configuración en `vercel.json` ya está lista
+   - No se requiere configuración adicional
 
+3. **Deploy**
+   - Haz clic en "Deploy"
+   - Espera 1-2 minutos
+   - Tu aplicación estará en línea con API funcional
 
-6.  **API falsa con json server**
+> 📖 Para instrucciones detalladas, consulta [DEPLOY.md](./DEPLOY.md)
 
-    **6.1.** Instalar json-server
+### Variables de Entorno
 
-        npm install json-server
+El proyecto detecta automáticamente el entorno:
 
-    Dentro del **package.json** se agrega automáticamente la siguiente dependencia:
+```javascript
+// Desarrollo
+API_URL = 'http://localhost:3000/videos'
 
-        "json-server": "^1.0.0-beta.0"
+// Producción
+API_URL = '/api/videos'
+```
 
-    **6.2.** Crear un archivo **db.json** en la raíz del proyecto con la siguiente estructura:
+---
 
-        {
-            "videos": [
-                {
-                    "id": 1,
-                    "title": "Video 1",
-                    "url": "https://www.youtube.com/watch?v=1",
-                    "category": "Frontend"
-                },
-                {
-                    "id": 2,
-                    "title": "Video 2",
-                    "url": "https://www.youtube.com/watch?v=2",
-                    "category": "Backend"
-                },
-                {
-                    "id": 3,
-                    "title": "Video 3",
-                    "url": "https://www.youtube.com/watch?v=3",
-                    "category": "DevOps"
-                }
-            ]
-        }
+## 🔌 API
+
+### Endpoints Disponibles
+
+El proyecto incluye una API REST serverless con los siguientes endpoints:
+
+#### Obtener todos los videos
+```http
+GET /api/videos
+```
+
+**Respuesta:**
+```json
+[
+  {
+    "id": "1",
+    "title": "React desde Cero",
+    "category": "FRONT END",
+    "photo": "https://i.ytimg.com/vi/example/maxresdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=example",
+    "description": "Aprende React desde cero"
+  }
+]
+```
+
+#### Obtener video por ID
+```http
+GET /api/videos/:id
+```
+
+#### Crear nuevo video
+```http
+POST /api/videos
+Content-Type: application/json
+
+{
+  "title": "Nuevo Video",
+  "category": "FRONT END",
+  "photo": "url-de-imagen",
+  "link": "url-de-youtube",
+  "description": "Descripción del video"
+}
+```
+
+#### Actualizar video
+```http
+PUT /api/videos/:id
+Content-Type: application/json
+
+{
+  "title": "Título actualizado"
+}
+```
+
+#### Eliminar video
+```http
+DELETE /api/videos/:id
+```
+
+### Categorías Disponibles
+
+- `FRONT END` - Desarrollo Frontend
+- `BACK END` - Desarrollo Backend  
+- `INNOVACIÓN Y GESTIÓN` - Metodologías y herramientas
+
+---
+- **Desarrollo**: API local en `http://localhost:3000`
+- **Producción**: API serverless en `/api/videos`
+
+### Build Local
+
+```bash
+npm run build    # Genera build de producción en /dist
+npm run preview  # Preview del build localmente
+```
+
+## 🗺️ Roadmap
+
+### ✅ Completado
+- [x] Sistema CRUD completo de videos
+- [x] Diseño responsive mobile-first
+- [x] Categorización de videos
+- [x] Modal de edición
+- [x] Confirmación de eliminación
+- [x] API serverless en Vercel
+- [x] Animaciones y transiciones modernas
+- [x] Sistema de notificaciones
+
+### 🚧 En Desarrollo
+- [ ] Sistema de búsqueda por título
+- [ ] Filtrado por categoría
+- [ ] Paginación de videos
+- [ ] Modo claro/oscuro toggle
+
+### 💡 Futuras Mejoras
+- [ ] Autenticación de usuarios
+- [ ] Lista de favoritos
+- [ ] Compartir videos en redes sociales
+- [ ] Sistema de comentarios
+- [ ] Valoraciones de videos
+- [ ] Panel de administración avanzado
+
+## 🤝 Contribución
+
+Las contribuciones son bienvenidas y apreciadas. Si deseas contribuir:
+
+1. **Fork el proyecto**
+2. **Crea una rama para tu feature**
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3. **Commit tus cambios**
+   ```bash
+   git commit -m 'feat: Add AmazingFeature'
+   ```
+4. **Push a la rama**
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+5. **Abre un Pull Request**
+
+> 📖 Lee nuestra [Guía de Contribución](./CONTRIBUTING.md) para más detalles sobre el proceso, guía de estilo y mejores prácticas.
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia MIT. Ver el archivo [LICENSE](./LICENSE) para más detalles.
+
+## 👤 Contacto
+
+**s3codecL** - Desarrollador Full Stack
+
+- GitHub: [@s3codecL](https://github.com/s3codecL)
+- LinkedIn: [gandradev](https://www.linkedin.com/in/gandradev/)
+- Email: [contacto@tudominio.com](mailto:contacto@tudominio.com)
+
+**Link del Proyecto**: [https://github.com/s3codecL/challenge-one-aluraflix](https://github.com/s3codecL/challenge-one-aluraflix)
+
+---
+
+## 🙏 Agradecimientos
+
+- [Oracle Next Education (ONE)](https://www.oracle.com/lad/education/oracle-next-education/) - Por la oportunidad de aprendizaje
+- [Alura LATAM](https://www.aluracursos.com/) - Por el contenido educativo de calidad
+- [React](https://react.dev/) - Por el increíble framework
+- [Vite](https://vitejs.dev/) - Por la velocidad en desarrollo
+- [Vercel](https://vercel.com) - Por el hosting gratuito
+- [React Icons](https://react-icons.github.io/react-icons/) - Por los iconos profesionales
+- [Styled Components](https://styled-components.com/) - Por los estilos dinámicos
+- La comunidad de desarrolladores que inspira y comparte conocimiento
+
+---
+- YouTube: [@s3codecL](https://www.youtube.com/@s3codecL/)
+
+**Link del Proyecto**: [https://github.com/s3codecL/challenge-one-aluraflix](https://github.com/s3codecL/challenge-one-aluraflix)
+
+**Demo en Vivo**: [https://challenge-one-aluraflix-kappa.vercel.app](https://challenge-one-aluraflix-kappa.vercel.app)
+
+---
+
+## 🎓 Agradecimientos
+
+- [Alura LATAM](https://www.aluracursos.com/) - Plataforma de educación
+- [Oracle Next Education](https://www.oracle.com/mx/education/oracle-next-education/) - Programa de formación
+- [Vercel](https://vercel.com) - Plataforma de deployment
+- [React Icons](https://react-icons.github.io/react-icons/) - Iconos
+- [Vite](https://vitejs.dev/) - Build tool
+
+---
+
+<div align="center">
+
+**⭐ Si este proyecto te fue útil, no olvides darle una estrella ⭐**
+
+Desarrollado con ❤️ por [s3codecL](https://github.com/s3codecL)
+
+</div>
 
     **6.3.** Iniciar el servidor JSON ejecutando:
 
