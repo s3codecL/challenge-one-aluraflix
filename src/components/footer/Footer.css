@@ -1,36 +1,53 @@
 .icons {
     color: var(--color-white);
-    font-size: 20px;
-    transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
-    transition: all 0.2s ease;
+    font-size: 1.5rem;
+    transition: all var(--transition-base);
+    cursor: pointer;
 }
 
 .icons:hover {
-    transform: perspective(1000px) rotateY(180deg) rotateX(180deg);
-    background-color: var(--color-brillo);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3px);
+    color: var(--color-blue);
+    transform: translateY(-3px) scale(1.1);
+    filter: drop-shadow(0 0 8px var(--color-blue));
 }
 
+/* Tablets */
 @media (max-width: 768px) {
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 3px;
-        gap: 10px;
+        gap: var(--spacing-sm);
+        padding: var(--spacing-md);
     }
+    
     .icons {
-        font-size: 18px;
-        
+        font-size: 1.25rem;
     }
+    
     .logo {
-        width: 30%;
-        background-color: var(--color-black);
+        width: 40%;
+        max-width: 150px;
     }   
+    
     .text {
         color: var(--color-white);
-        font-size: 12px !important;
-        margin-bottom: 6rem !important;
+        font-size: 0.875rem !important;
+        text-align: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .icons {
+        font-size: 1.125rem;
+    }
+    
+    .logo {
+        width: 50%;
+    }
+    
+    .text {
+        font-size: 0.75rem !important;
     }
 }

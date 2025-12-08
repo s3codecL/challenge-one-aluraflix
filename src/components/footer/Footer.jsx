@@ -10,12 +10,12 @@ const StyledFooter = styled.footer`
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
-    height: 100%;
     background-color: var(--color-black);
-    padding: 2rem;
+    padding: var(--spacing-lg) var(--spacing-xl);
     box-sizing: border-box;
     border-top: 4px solid var(--color-blue);
     box-shadow: 0 -10px 15px 0 var(--color-button-shadow);
+    margin: 0;
 `;
 
 const IconContainer = styled.ul`
@@ -54,7 +54,7 @@ const FooterText = styled.p`
 
 function Footer() {
     return (
-        <StyledFooter className='container'>
+        <StyledFooter>
             <LogoContainer className='logo'>
                 <img src={logo} alt="Logo" />
             </LogoContainer>

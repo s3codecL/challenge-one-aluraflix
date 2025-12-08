@@ -1,26 +1,147 @@
 * {
   margin: 0;
+  padding: 0;
   font-family: 'Roboto', sans-serif;
-  background-color: var(--color-bg);
-  overflow-x: hidden;
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--color-bg);
+  overflow-x: hidden;
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
 :root {
+  /* Colores principales */
   --color-bg: #03122F;
   --color-bg-edit: #03122F;
   --color-backend: #00C86F;
   --color-frontend: #6BD1FF;
   --color-inov-gestao: #FFBA05;
+  
+  /* Colores de sistema */
   --color-error: #FF0000;
+  --color-success: #00C86F;
+  --color-warning: #FFBA05;
+  
+  /* Escala de grises */
   --color-light-gray: #A5A5A5;
   --color-white: #FFFFFF;
   --color-white-smoke: #F5F5F5;
-  --color-blue: #ffffff;
-  --color-blue-light: #000000;
   --color-dark-gray-border: #262626;
   --color-black: #000000;
+  
+  /* Colores especiales */
+  --color-blue: #6BD1FF;
+  --color-blue-light: #9DE3FF;
   --color-brillo: #00ff22;
   --color-button-shadow: #0b223f;
   --color-banner: #001233;
+  
+  /* Espaciado moderno */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  
+  /* Transiciones */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+  
+  /* Sombras modernas */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-glow: 0 0 15px rgba(107, 209, 255, 0.3);
+  
+  /* Border radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+  
+  /* Breakpoints (solo para referencia en comentarios) */
+  /* Mobile: 320px - 767px */
+  /* Tablet: 768px - 1023px */
+  /* Desktop: 1024px+ */
+  /* Wide: 1440px+ */
 }
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-dark-gray-border);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-light-gray);
+}
+
+/* Accesibilidad - Focus visible */
+:focus-visible {
+  outline: 2px solid var(--color-blue);
+  outline-offset: 2px;
+}
+
+/* Animaciones globales */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Utilidades */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 var(--spacing-lg);
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 var(--spacing-xl);
+  }
+}
+

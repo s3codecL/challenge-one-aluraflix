@@ -3,13 +3,14 @@ import PropTypes from "prop-types";
 import styles from "./HeaderLink.module.css";
 
 
-function HeaderLink({ url, children }) {
+function HeaderLink({ url, children, onClick }) {
     return (
         <NavLink
             to={url}
             className={({ isActive }) =>
                 isActive ? `${styles.link} ${styles.activeLink}` : styles.link
             }
+            onClick={onClick}
         >
             {children}
         </NavLink>
@@ -19,6 +20,7 @@ function HeaderLink({ url, children }) {
 HeaderLink.propTypes = {
     url: PropTypes.string.isRequired,
     children: PropTypes.node.isRequired,
+    onClick: PropTypes.func,
 };
 
 export default HeaderLink;

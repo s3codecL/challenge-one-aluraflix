@@ -8,9 +8,14 @@ export const useVideoContext = () => useContext(VideoContext);
 export const VideoProvider = ({ children }) => {
     const [videos, setVideos] = useState([]);
 
+    // Detectar si estamos en desarrollo o producción
+    const API_URL = import.meta.env.MODE === 'development' 
+        ? 'http://localhost:3000/videos'
+        : '/api/videos';
+
     const fetchVideos = async () => {
         try {
-            const response = await fetch('http://localhost:3000/videos');
+            const response = await fetch(API_URL);
             const data = await response.json();
             setVideos(data);
         } catch (error) {
